@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    gap: 50px;
+}
+
+.page-container > button {
+    font-size: 30px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(41, 230, 255);
+    box-shadow: 1px 1px; 
+    border-radius: 10px;
+
+        &:focus {
+            outline: none;
+        }
+        &:hover {
+            background-color: rgb(89, 236, 255);
+        }
+        &:active {
+            box-shadow: 1px 1px inset;
+            background-color: rgb(32, 183, 203);
+        }
+    
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    border: 2px solid black;
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+    overflow-wrap: anywhere;
+}
+
+th:last-child {
+    width: 200px;
+
+}
+
+
+tr {
+    background-color: aliceblue;
+
+    tbody &:hover {
+        background-color: rgb(211, 235, 255);
+        outline: 3px solid yellow;
+    }
+}
+
+input {
+    flex-grow: 1;
+    font-size: inherit;
+}
+
+button {
+    padding: 5px;
+}
+
+form {
+    font-size: 20px;
+}
+
+form > *:not(:last-child), dialog > :first-child {
+    margin-bottom: 10px;
+}
+
+form div:last-child {
+    justify-content: space-between;
+}
+
+dialog > :first-child {
+    border-bottom: 1px solid;
+}
+
+dialog[open] {
+    width: 15%;
+    min-width: min-content;
+    margin: auto;
+    padding: 20px;
+
+}
+
+label {
+    width: 100%;
+}
+
+.row-flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+dialog > div:first-child {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.column-flex-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
